@@ -24,17 +24,26 @@ export class UpdateBookStatusService {
             return new Error("Book does not exists")
         }
 
-        if (status == "Lido") {
-            const dateNow = new Date
-            book.concluded_at =  dateNow
-            book.rate = rate
+        if (status == "Quero ler" || status == "Lendo" || status == "Lido") {
+            if (status == "Lido") {
+                const dateNow = new Date
+                book.concluded_at =  dateNow
+                book.rate = rate
+            } else {
+                // If status is set to "Lido" and we change to "Quero ler" or "lendo", concluded date and rate flags must be restarted
+                book.concluded_at = null
+                book.rate = null
+            }
+    
+            book.status = status
+    
+            // Execute UPDATE query into database
+            await repo.save(book)
+    
+            return book
         }
 
-        book.status = status
+        return new Error("Invalid status!")
 
-        // Execute UPDATE query into database
-        await repo.save(book)
-
-        return book
     }
 }

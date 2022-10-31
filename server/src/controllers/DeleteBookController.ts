@@ -13,6 +13,6 @@ export class DeleteBookController {
             return response.status(400).json(result.message)
         }
 
-        return response.json({ "message": "Book deleted!" })
+        return response.json("Book deleted!")
     }
 }
