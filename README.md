@@ -34,7 +34,7 @@ O **Book Tracker** é uma plataforma de leitura de livros online, que permite ac
 
 - ### **Pré-requisitos**
 
-  - É **necessário** possuir o db PostgreSQL instalado na máquina. Para Mac baixe **[aqui](https://postgresapp.com/downloads.html)** (Postgres.app with PostgreSQL 15 (Universal)
+  - É **necessário** possuir o db PostgreSQL instalado na máquina. Para Mac, clique **[aqui](https://postgresapp.com/downloads.html)** para fazer o download (Postgres.app with PostgreSQL 15 (Universal)
   - Após instalar, abrir o PostgreSQL 15 e rodar o banco de dados local clicando em **start**
   - Abra seu o seu gerenciador de banco de dados preferido e inicie uma nova conexão localhost 
 
