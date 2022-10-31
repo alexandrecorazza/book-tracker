@@ -1,0 +1,119 @@
+#landing-page {
+  height: 100vh;
+
+  background: url("../../assets/home-background.png") no-repeat 850px center;
+}
+
+#landing-page header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#landing-page .content {
+  width: 100%;
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#landing-page .content header {
+  margin: 48px 0 0;
+}
+
+#landing-page .content header h1 {
+  font-family: 'Expletus Sans', cursive;
+  color: #324d7a;
+  margin: 0 0 0 15px;
+}
+
+#landing-page .content main {
+  flex: 1;
+  max-width: 560px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#landing-page .content main h1 {
+  font-size: 54px;
+  color: var(--title-color);
+}
+
+#landing-page .content main p {
+  font-size: 24px;
+  margin-top: 24px;
+  line-height: 38px;
+}
+
+#landing-page .content main a {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  margin-top: 40px;
+}
+
+#landing-page .content main a span {
+  display: block;
+  background: rgba(0, 0, 0, 0.08);
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+#landing-page .content main a span svg {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+#landing-page .content main a strong {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+
+#landing-page .content main a:hover {
+  background: #3865ad;
+}
+
+@media (max-width: 900px) {
+  #landing-page .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #landing-page .content header {
+    margin: 48px auto 0;
+  }
+
+  #landing-page .content main {
+    align-items: center;
+  }
+
+  #landing-page .content main h1 {
+    font-size: 42px;
+  }
+
+  #landing-page .content main p {
+    font-size: 24px;
+  }
+}

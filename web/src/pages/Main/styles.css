@@ -1,0 +1,223 @@
+#main-page {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+#main-page header {
+  margin-top: 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-page header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#main-page header div h1 {
+  font-family: 'Expletus Sans', cursive;
+  color: #324d7a;
+  margin: 0 0 0 15px;
+}
+
+#main-page header a {
+  color: var(--title-color);
+  font-weight: bold;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+}
+
+#main-page header a svg {
+  margin-right: 16px;
+  color: var(--primary-color);
+}
+
+#main-page .content {
+  margin: 80px auto;
+  padding: 64px;
+  max-width: 930px;
+  background: #fff;
+  border-radius: 8px;
+  gap: 100px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#main-page .content h1 {
+  font-size: 36px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main-page form fieldset {
+  margin-top: 64px;
+  min-inline-size: auto;
+  border: 0;
+}
+
+#main-page form legend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#main-page form legend h2 {
+  font-size: 24px;
+}
+
+#main-page form legend span {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+#main-page form .field-group {
+  flex: 1;
+  display: flex;
+}
+
+#main-page form .field {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#main-page form .field input[type="text"],
+#main-page form .field input[type="email"],
+#main-page form .field input[type="number"] {
+  flex: 1;
+  background: #f0f0f5;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6c6c80;
+}
+
+#main-page form .field select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  flex: 1;
+  background: #f0f0f5;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6c6c80;
+}
+
+#main-page form .field input::placeholder {
+  color: #a0a0b2;
+}
+
+#main-page form .field label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#main-page form .field :disabled {
+  cursor: not-allowed;
+}
+
+#main-page form .field-group .field+.field {
+  margin-left: 24px;
+}
+
+#main-page form .field-group input+input {
+  margin-left: 24px;
+}
+
+#main-page form .field-check {
+  flex-direction: row;
+  align-items: center;
+}
+
+#main-page form .field-check input[type="checkbox"] {
+  background: #f0f0f5;
+}
+
+#main-page form .field-check label {
+  margin: 0 0 0 8px;
+}
+
+#main-page form .leaflet-container {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+#main-page .content button {
+  width: 260px;
+  height: 56px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+#main-page .content button:hover {
+  background: #3865ad;
+}
+
+#main-page .empty-list {
+  text-align: center;
+}
+
+#main-page .books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  list-style: none;
+}
+
+#main-page .books-grid li {
+  background: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  height: 180px;
+  border-radius: 8px;
+  padding: 32px 24px 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+
+  cursor: pointer;
+}
+
+#main-page .books-grid li span {
+  flex: 1;
+  margin-top: 12px;
+
+  display: flex;
+  align-items: center;
+  color: var(--title-color);
+}
+
+#main-page .books-grid li.selected {
+  background: #e1faec;
+  border: 2px solid #4277cd;
+}
