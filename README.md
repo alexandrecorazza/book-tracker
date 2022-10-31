@@ -9,7 +9,7 @@
   <a href="#bookmark-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#%EF%B8%8F-configuração">Configuração do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#testando-requisitos">Testando os requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#man_factory_worker-testando-os-requisitos">Testando os requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#pushpin-to-do">To-do</a>&nbsp;&nbsp;&nbsp;
 </p>
 
@@ -34,7 +34,7 @@ O **Book Tracker** é uma plataforma de leitura de livros online, que permite ac
 
 - ### **Pré-requisitos**
 
-  - É **necessário** possuir o db PostgreSQL instalado na máquina. Para Mac baixe **[aqui](https://postgresapp.com/downloads.html)** (Postgres.app with PostgreSQL 15 (Universal)
+  - É **necessário** possuir o db PostgreSQL instalado na máquina. Para Mac, clique **[aqui](https://postgresapp.com/downloads.html)** para fazer o download (Postgres.app with PostgreSQL 15 (Universal)
   - Após instalar, abrir o PostgreSQL 15 e rodar o banco de dados local clicando em **start**
   - Abra seu o seu gerenciador de banco de dados preferido e inicie uma nova conexão localhost 
 
@@ -89,7 +89,7 @@ O **Book Tracker** é uma plataforma de leitura de livros online, que permite ac
 Os requisitos podem ser testados via **Postman** de acordo com as seguintes rotas:
 - Listar livros cadastrados: **GET** - http://localhost:3333/books
 - Adicionar novo livro: **POST** - http://localhost:3333/books
-- Editar livro pelo id - **PUT** http://localhost:3333/books/{id}
+- Editar livro pelo id: **PUT** - http://localhost:3333/books/{id}
 - Edita status e dar nota ao livro, desde que o status seja "Lido": **PUT** - http://localhost:3333/books/status/{id}
 - Deleta livro: **DELETE** - http://localhost:3333/books/{id}
 
