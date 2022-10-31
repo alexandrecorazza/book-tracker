@@ -89,7 +89,7 @@ O **Book Tracker** é uma plataforma de leitura de livros online, que permite ac
 Os requisitos podem ser testados via **Postman** de acordo com as seguintes rotas:
 - Listar livros cadastrados: **GET** - http://localhost:3333/books
 - Adicionar novo livro: **POST** - http://localhost:3333/books
-- Editar livro pelo id - **PUT** http://localhost:3333/books/{id}
+- Editar livro pelo id: **PUT** - http://localhost:3333/books/{id}
 - Edita status e dar nota ao livro, desde que o status seja "Lido": **PUT** - http://localhost:3333/books/status/{id}
 - Deleta livro: **DELETE** - http://localhost:3333/books/{id}
 
