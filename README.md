@@ -117,7 +117,7 @@ http://localhost:3333/books/1
 #Exemplo
 
 #URL
-http://localhost:3333/books/1
+http://localhost:3333/books/status/1
 
 #Incluir no body
 {
