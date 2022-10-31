@@ -88,10 +88,43 @@ O **Book Tracker** é uma plataforma de leitura de livros online, que permite ac
 ## :man_factory_worker: Testando os requisitos
 Os requisitos podem ser testados via **Postman** de acordo com as seguintes rotas:
 - Listar livros cadastrados: **GET** - http://localhost:3333/books
-- Adicionar novo livro: **POST** - http://localhost:3333/books
-- Editar livro pelo id: **PUT** - http://localhost:3333/books/{id}
-- Edita status e dar nota ao livro, desde que o status seja "Lido": **PUT** - http://localhost:3333/books/status/{id}
 - Deleta livro: **DELETE** - http://localhost:3333/books/{id}
+- Adicionar novo livro: **POST** - http://localhost:3333/books
+```
+#Exemplo
+
+#Incluir no body
+{
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown"
+}
+```
+- Editar livro pelo id: **PUT** - http://localhost:3333/books/{id}
+```
+#Exemplo
+
+#URL
+http://localhost:3333/books/1
+
+#Incluir no body
+{
+    "title": "Alice Wonderland",
+    "author": "Lewis Carroll"
+}
+```
+- Edita status e dar nota ao livro, desde que o status seja "Lido": **PUT** - http://localhost:3333/books/status/{id}
+```
+#Exemplo
+
+#URL
+http://localhost:3333/books/1
+
+#Incluir no body
+{
+    "rate": "10",
+    "status": "Lido"
+}
+```
 
 <p align="center">
     <img alt="postman" width="450px" src="./.github/postman.gif" />
